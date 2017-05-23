@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge Myself</title>
+
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
+</head>
+<body>
+<button id="open_modal" data-vm-open>Open modal</button>
+<div data-vm-modal class="my-custom-modal">
+    <div class="close-modal pointer" data-vm-close>
+        <img src="assets/img/close.png"/>
+    </div>
+    <div class="main">
+        <div class="tab-headers">
+            <div class="flex-center pointer item" data-tab-active="0" data-tab-default>
+                Login
+            </div>
+            <div class="flex-center pointer item" data-tab-active="1">
+                Signup
+            </div>
+        </div>
+        <div class="tab-container">
+            <div class="tab-content" data-tab="0">
+                <form name="loginForm" id="loginForm">
+                    <div class="form-control">
+                        <label>Email Address</label>
+                        <input type="text" name="email" placeholder="email@lazada.com"/>
+                    </div>
+                    <div class="form-control margin-bottom-25">
+                        <label>Password</label>
+                        <input type="password" name="password" placeholder="*********"/>
+                    </div>
+                    <div class="form-control">
+                        <button type="submit" name="submit" class="btn-login pointer">Login</button>
+                        <div class="btn-forget pointer">Forgot password?</div>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-content" data-tab="1">
+                Working in progress ....
+            </div>
+        </div>
+
+
+    </div>
+    <div class="side">
+        <div class="other">Or login with</div>
+        <div class="icon icon-facebook pointer">
+            <img src="assets/img/facebook.png"/>
+            Facebook
+        </div>
+        <div class="icon icon-google pointer">
+            <img src="assets/img/google.png"/>
+            Google
+        </div>
+    </div>
+</div>
+</body>
+</html>
