@@ -59,6 +59,7 @@
         });
 
         util.addEvent(form, 'submit', function (e) {
+            validate();
             console.log('Data is validated with: ', data);
             e.preventDefault();
         });
