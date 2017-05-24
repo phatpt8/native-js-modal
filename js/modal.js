@@ -33,7 +33,8 @@
         util.forEach([
             'md-init-hidden',
             'md-center-middle-align',
-            'md-bg-dark'
+            'md-bg-dark',
+            'md-animation-top'
         ], function (klassName) {
             util.addClass(this.options.vmModal, klassName);
         }.bind(this));

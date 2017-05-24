@@ -46,6 +46,17 @@ var modalUtility = {
         return str;
     },
 
+    extend: function extend(obj) {
+        this.forEach([].slice.call(arguments, 1), function (source) {
+            if (source) {
+                for (var prop in source) {
+                    obj[prop] = source[prop];
+                }
+            }
+        });
+        return obj;
+    },
+
     each: function () {
         for (var row in obj) Object.prototype.hasOwnProperty.call(obj, row) && callback.call(null, obj[row], row, obj)
     },

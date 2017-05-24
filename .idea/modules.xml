@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/native-js-popup.iml" filepath="$PROJECT_DIR$/native-js-popup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/native-js-modal.iml" filepath="$PROJECT_DIR$/native-js-modal.iml" />
     </modules>
   </component>
 </project>
