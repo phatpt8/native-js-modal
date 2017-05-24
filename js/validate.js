@@ -14,6 +14,7 @@
 
         if (!str) {
             alert('Password is blank.');
+            return;
         }
 
         if (!REGEX_PASSWORD_SPECIAL_CHAR.test(str)) {
